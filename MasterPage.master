@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta content="en-us" http-equiv="Content-Language"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Jason Krywenkyj - Recipe Website</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="bodyBackground">
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-inverse">
+	  	<div class="container-fluid">
+	    	<div class="navbar-header">
+	     	 	<a class="navbar-brand" href="home.aspx"><img class="img-circle" width="25" height="25" src="img/chickenmelon.jpg"/></a>
+	   		</div>
+	    	<ul class="nav navbar-nav">
+	     	 	<li class="active"><a href="home.aspx">Home</a></li>
+	      		<li><a href="recipes.aspx">Recipes</a></li>
+                <li><a href="addRecipe.aspx">Add Recipe</a></li>
+                <li><a href="addIngredient.aspx">Add Ingredient</a></li>  
+                <li><a href="search.aspx">Search</a></li>
+                <li><a href="deleteRecipe.aspx">Delete Recipe</a></li>
+                <li><a href="updateRecipe.aspx">Update Recipe</a></li>  
+                <li><a href="Ingredients.aspx">Ingredients</a></li>
+                <li><a href="errorLog.aspx">Error Log</a></li>       
+	    	</ul>
+	  	</div>
+	</nav>
+    <div id="containerBackground">
+        <asp:ContentPlaceHolder id="container" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+	<footer class="container-fluid text-center">
+  		<p>&copy;&nbsp; 2016 Jason Krywenkyj</p>
+	</footer>
+    </form>
+</body>
+</html>
